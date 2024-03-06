@@ -6,236 +6,257 @@ console.log(id)
 
 //first cart
 const clothes = [
+    {
+      id: 1,
+      imgUrl: "https://media.tommy.com/us/static/images/scheduled_marketing/2024/01/PLP_FH_MTops_all.jpg",
+      category: "Shop All",
+    },
+    {
+      id: 2,
+      imgUrl: "https://media.tommy.com/us/static/images/scheduled_marketing/2024/01/PLP_FH_MTops_polos.jpg",
+      category: "Polos",
+    },
+    {
+      id: 3,
+      imgUrl:"https://media.tommy.com/us/static/images/scheduled_marketing/2024/01/PLP_FH_MTops_tees.jpg",
+      category: "T-Shitrs",
+    },
+    {
+      id: 4,
+      imgUrl:"https://media.tommy.com/us/static/images/scheduled_marketing/2024/01/PLP_FH_MTops_hoodies.jpg",
+      category: "Hoodies & Sweaters",
+    },
+    {
+      id: 5,
+      imgUrl:"https://media.tommy.com/us/static/images/scheduled_marketing/2024/01/PLP_FH_MTops_shirts.jpg",
+      category: "Shirts",
+    },
+    {
+      id: 6,
+      imgUrl:"https://media.tommy.com/us/static/images/scheduled_marketing/2024/01/PLP_FH_MTops_sweaters.jpg",
+      category: "Sweaters",
+    },
+  ];
+
+  let tommy = document.querySelectorAll('.clothe-img')
+  for(let i = 0; i < tommy.length; i++) {
+    tommy[i].src = clothes[i].imgUrl;
+  }
+
+
+
+// second cart
+const productDetails = [
   {
-    id: 1,
-    imgUrl: [
-       "https://media.tommy.com/us/static/images/scheduled_marketing/2024/01/PLP_FH_MTops_all.jpg",
-       "https://media.tommy.com/us/static/images/scheduled_marketing/2024/01/PLP_FH_MTops_polos.jpg",
-       "https://media.tommy.com/us/static/images/scheduled_marketing/2024/01/PLP_FH_MTops_tees.jpg",
-       "https://media.tommy.com/us/static/images/scheduled_marketing/2024/01/PLP_FH_MTops_hoodies.jpg",
-       "https://media.tommy.com/us/static/images/scheduled_marketing/2024/01/PLP_FH_MTops_shirts.jpg",
-       "https://media.tommy.com/us/static/images/scheduled_marketing/2024/01/PLP_FH_MTops_sweaters.jpg",
-  ],
-    category: "Shop All",
-    text: ""
-    // href:"https://usa.tommy.com/en/men/clothing/tops/polos?icid=men_polos_plp-filter2-men_polos_plp-20240215"
-  },
-  {
-    id: 2,
-    imgUrl: "https://media.tommy.com/us/static/images/scheduled_marketing/2024/01/PLP_FH_MTops_polos.jpg",
-    category: "Polos",
-    // href:"https://usa.tommy.com/en/men/clothing/tops/polos?icid=men_polos_plp-filter2-men_polos_plp-20240215"
-  },
-  {
-    id: 3,
-    imgUrl:"https://media.tommy.com/us/static/images/scheduled_marketing/2024/01/PLP_FH_MTops_tees.jpg",
-    category: "T-Shitrs",
-    // href:"https://usa.tommy.com/en/men/clothing/tops/polos?icid=men_polos_plp-filter2-men_polos_plp-20240215"
-  },
-  {
-    id: 4,
-    imgUrl:"https://media.tommy.com/us/static/images/scheduled_marketing/2024/01/PLP_FH_MTops_hoodies.jpg",
-    category: "Hoodies & Sweaters",
-    // href:"https://usa.tommy.com/en/men/clothing/tops/polos?icid=men_polos_plp-filter2-men_polos_plp-20240215"
-  },
-  {
-    id: 5,
-    imgUrl:"https://media.tommy.com/us/static/images/scheduled_marketing/2024/01/PLP_FH_MTops_shirts.jpg",
-    category: "Shirts",
-    // href:"https://usa.tommy.com/en/men/clothing/tops/polos?icid=men_polos_plp-filter2-men_polos_plp-20240215"
-  },
-  {
-    id: 6,
-    imgUrl:"https://media.tommy.com/us/static/images/scheduled_marketing/2024/01/PLP_FH_MTops_sweaters.jpg",
-    category: "Sweaters",
-    // href:"https://usa.tommy.com/en/men/clothing/tops/polos?icid=men_polos_plp-filter2-men_polos_plp-20240215"
+   id: 1,
+   imgUrl: "https://shoptommy.scene7.com/is/image/ShopTommy/78J8322_FAP_BCK?wid=352&hei=464&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
+   imUrl:"https://shoptommy.scene7.com/is/image/ShopTommy/78J8322_FAP_DE1?wid=352&hei=464&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
+   brand: "Flag Logo Crewneck Sweater",
+   originalPrice: 79.50,
+   salePrice: "30% off $150+ 120% off $100+ with code: SAVE",
+   discountPercent: "56.30 ",
+   colors: "+12 Colors",
+ },
+ {
+   id: 2,
+   imgUrl: "https://shoptommy.scene7.com/is/image/ShopTommy/78J8323_FAP_FNT?wid=352&hei=464&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
+   imUrl:"https://shoptommy.scene7.com/is/image/ShopTommy/78J8323_FAP_DE1?wid=352&hei=464&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
+   brand: "Flag Logo V-Neck Sweater",
+   originalPrice: 79.50,
+   salePrice: "30% off $150+ 120% off $100+ with code: SAVE",
+   discountPercent: "56 ",
+   colors: "+4 Colors",
+ },
+ {
+   id: 3,
+   imgUrl: "https://shoptommy.scene7.com/is/image/ShopTommy/78J9338_FAP_FNT?wid=352&hei=464&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
+   imUrl: "https://shoptommy.scene7.com/is/image/ShopTommy/78J9338_FAP_DE1?wid=352&hei=464&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
+   brand: "Flag Logo Cable Knit Sweater",
+   originalPrice: 89.50,
+   salePrice: "30% off $150+ 120% off $100+ with code: SAVE",
+   discountPercent: "53.40",
+   colors: "+12 Colors",
+ },
+ {
+   id: 4,
+   imgUrl: "https://shoptommy.scene7.com/is/image/ShopTommy/MW34683_TQY_FNT?wid=352&hei=464&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
+   imUrl: "https://shoptommy.scene7.com/is/image/ShopTommy/MW34683_TQY_DE1?wid=352&hei=464&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
+   brand: "Relaxed Fit Linen-Blend Rugby Polo",
+   originalPrice: 169.00,
+   salePrice: "30% off $150+ 120% off $100+ with code: SAVE",
+   discountPercent: "53",
+   colors: "+12 Colors",
+ },
+ {
+   id: 5,
+   imgUrl: "https://shoptommy.scene7.com/is/image/ShopTommy/78J9329_BDS_FNT?wid=352&hei=464&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
+   imUrl:"https://shoptommy.scene7.com/is/image/ShopTommy/78J9329_BDS_DE1?wid=352&hei=464&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
+   brand: "Flag logo Quarter-Zip Sweater",
+   originalPrice: 89.50,
+   salePrice: "30% off $150+ 120% off $100+ with code: SAVE",
+   discountPercent: "44",
+   colors: "+12 Colors",
+ },
+ {
+   id: 6,
+   imgUrl: "https://shoptommy.scene7.com/is/image/ShopTommy/78J8322_BDS_FNT?wid=352&hei=464&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
+   imUrl:"https://shoptommy.scene7.com/is/image/ShopTommy/78J8322_BDS_DE1?wid=352&hei=464&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
+   brand: "Flag Logo Crewneck Sweater",
+   originalPrice: 79.50,
+   salePrice: "30% off $150+ 120% off $100+ with code: SAVE",
+   discountPercent: "34.90",
+   colors: "+12 Colors",
+ },
+ {
+   id: 7,
+   imgUrl: "https://shoptommy.scene7.com/is/image/ShopTommy/78J9320_AWD_FNT?wid=352&hei=464&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
+   imUrl:"https://shoptommy.scene7.com/is/image/ShopTommy/78J9320_AWD_DE1?wid=352&hei=464&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
+   brand: "Flag Logo Cardigan",
+   originalPrice: 62.65,
+   salePrice: "30% off $150+ 120% off $100+ with code: SAVE",
+   discountPercent: "30",
+   colors: "+2 Colors",
+ },
+ {
+   id: 8,
+   imgUrl: "https://shoptommy.scene7.com/is/image/ShopTommy/MW34686_DW5_FNT?wid=352&hei=464&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
+   imUrl:"https://shoptommy.scene7.com/is/image/ShopTommy/MW34686_DW5_DE1?wid=352&hei=464&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
+   brand: "Sustainable Style",
+   originalPrice: 99.50,
+   salePrice: "30% off $150+ 120% off $100+ with code: SAVE",
+   discountPercent: "49.90",
+   colors: "+1 Colors",
+ },
+ {
+   id: 9,
+   imgUrl: "https://shoptommy.scene7.com/is/image/ShopTommy/78J9338_ZZ3_FNT?wid=352&hei=464&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
+   imUrl:"https://shoptommy.scene7.com/is/image/ShopTommy/78J9338_ZZ3_DE1?wid=352&hei=464&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
+   brand: "Flag Logo Cable Knit Sweater",
+   originalPrice: 62.65,
+   salePrice: "30% off $150+ 120% off $100+ with code: SAVE",
+   discountPercent: "30",
+   colors: "+6 Colors",
+ },
+ {
+   id: 10,
+   imgUrl: "https://shoptommy.scene7.com/is/image/ShopTommy/78J9338_P7D_FNT?wid=576&hei=759&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
+   imUrl:"https://shoptommy.scene7.com/is/image/ShopTommy/78J9338_P7D_BCK?wid=576&hei=759&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
+   brand: "Flag Logo Cable Knit Sweater",
+   originalPrice: 62.65,
+   salePrice: "30% off $150+ 120% off $100+ with code: SAVE",
+   discountPercent: "30",
+   colors: "+5 Colors",
+ },
+ {
+  id: 11,
+  imgUrl: "https://shoptommy.scene7.com/is/image/ShopTommy/MW33508_DW5_FNT?wid=576&hei=759&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
+  imUrl:"https://shoptommy.scene7.com/is/image/ShopTommy/MW33508_DW5_BCK?wid=576&hei=759&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
+  brand: "Monotype Logo Stripe Quarter-Zip Sweater",
+  originalPrice: 118.30,
+  salePrice: "30% off $150+ 120% off $100+ with code: SAVE",
+  discountPercent: "100.90",
+  colors: "+2 Colors",
+},
+{
+  id: 12,
+  imgUrl: "https://shoptommy.scene7.com/is/image/ShopTommy/78J9322_P7D_FNT?wid=576&hei=759&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
+  imUrl:"https://shoptommy.scene7.com/is/image/ShopTommy/78J9322_P7D_BCK?wid=576&hei=759&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
+  brand: "Flag Logo Zip Sweater",
+  originalPrice: 62.65,
+  salePrice: "30% off $150+ 120% off $100+ with code: SAVE",
+  discountPercent: "50,30",
+  colors: "+6 Colors",
+},
+]
 
-  },
-];
+function createProductCard(secClothes) {
+  const { imgUrl, brand, originalPrice, salePrice , discountPercent , colors } = secClothes
+  // Create the main card container
+  const card = document.createElement('div');
+  card.classList.add('card');
 
-const tommy = clothes.find(item => item.id == Number(id));
+  // Create and append the image
+  const img = document.createElement('img');
+  img.src = imgUrl;
+  img.alt = brand; // It's good practice to provide alt text for images
+  card.appendChild(img);
 
-console.log(tommy);
+  // Create and append the brand paragraph
+  const brandPara = document.createElement('p');
+  brandPara.textContent = brand;
+  card.appendChild(brandPara);
 
-function createSportsSuitSection(cart) {
-    // Create the main container for the sports suit section
-    const sportsSuitDiv = document.createElement('div');
-    sportsSuitDiv.classList.add('sports_suit') ;
+  // Create and append the price and discount information
+  const priceHeading = document.createElement('h3');
+  priceHeading.textContent = `$${originalPrice} $${salePrice} ${discountPercent}% off`;
+  card.appendChild(priceHeading);
 
-    // Create the container for the shop all section
-    const shopAllDiv = document.createElement('div');
-    // shopAllDiv.classList.add('shop_all');
-
-
-    const descriptionPara = document.createElement("p");
-    descriptionPara.textContent = tommy.category;
-
-    // Create the anchor (link) element
-    // const linkk = document.createElement('a');
-    // linkk.href= cart.href
-
-    // Create the image element
-    const image = document.createElement('img');
-    image.src = tommy.imgUrl
-    image.style.height = 200;
-    image.alt = '';
-
-    // Append the image to the link
+  // Create and append the colors information
+  const colorsPara = document.createElement('p');
+  colorsPara.textContent = colors;
+  card.appendChild(colorsPara);
 
 
-    // Create the header element
-    const header = document.createElement('h4');
+  card.addEventListener('mouseenter', () => {
+          img.src = secClothes.imUrl
+      })
+      card.addEventListener('mouseleave', () => {
+          img.src = secClothes.imgUrl
+      })
 
-    // Append the link and header to the shop all div
-    shopAllDiv.appendChild(image);
+  // Create and append the 'Add to cart' button
 
-    // Append the shop all div to the main sports suit div
-    sportsSuitDiv.appendChild(shopAllDiv);
-    sportsSuitDiv.appendChild(header)
-    sportsSuitDiv.appendChild(descriptionPara);
+    const button = document.createElement("button");
+    // button.textContent = "Add to cart";
+    // button.addEventListener("click",()=>addToCart(product)) //егер функцияда аргумент жок болса просто функциянын атын жазуга болады   button.addEventListener("click",addToCart)
+    if (isAddedToCart(secClothes)) {
+      button.textContent = "Added to cart";
+      button.enabled = false; //егер заттарды корзинага косу керек болса  осыны басканда added to cart деп шыгады
+    } else {
+      button.textContent = "Add to cart";
+      button.addEventListener("click", () => {
+        addToCart(secClothes);
+      });
+    }
 
-    return sportsSuitDiv
-
-    // Finally, append the sports suit div to a specified parent element in the document.
-    // For example, appending to the body. Modify this to append to a different parent element if needed.
+    card.appendChild(button);
+  return card;
 }
 
-// Call the function to execute
+
+const cardsContainer = document.querySelector('.cards'); // Assuming you have a container with class 'cards'
+// const productCard = createProductCard(productDetails);
+// cardsContainer.appendChild(productCard);
+
+// Iterate over the productDetails array
+productDetails.forEach(product => {
+  // For each product, call createProductCard and pass the product as the argument
+  const productCard = createProductCard(product);
+
+  // Append the resulting card to the cards container
+  cardsContainer.appendChild(productCard);
+});
+
+
+function addToCart(product) {
+  const cart = localStorage.getItem("cart");
+  const cartItems = JSON.parse(cart) || [];
+  if (cartItems.find(item  => item.id == product.id)) {
+    return;
+  }
+  cartItems.push({...product, quantity: 1,size: "M"}); //обьект курады
+  localStorage.setItem("cart", JSON.stringify(cartItems)); //object-JSON
+  window.location.reload() //страница автоматический обновляется
+}
+
+function isAddedToCart(product) {
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  return cart.find((p) => p.id == product.id) != null;
+}
 
 
 
-let container = document.querySelector(".clothes_page")
-container.appendChild(createSportsSuitSection())
-
-
-// Select
-
-
-//second cart
-// const secClothes = [
-//   {
-//     id: 1,
-//     brand: "Flag Logo Crewneck Sweater",
-//     imgUrl: "https://shoptommy.scene7.com/is/image/ShopTommy/78J8322_FAP_BCK?wid=352&hei=464&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
-//     price: 16100,
-//     category: "+12 Colors",
-//   },
-//   {
-//     id: 2,
-//     brand: "Flag Logo V-Neck Sweater",
-//     imgUrl: "https://shoptommy.scene7.com/is/image/ShopTommy/78J8323_FAP_FNT?wid=352&hei=464&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
-//     price: 19990,
-//     category: "+4 Colors",
-//   },
-//   {
-//     id: 3,
-//     brand: "Flag Logo Cable Knit Sweater",
-//     imgUrl:"https://shoptommy.scene7.com/is/image/ShopTommy/78J9338_FAP_FNT?wid=352&hei=464&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
-//     price: 18660,
-//     category: "+5 Colors",
-//   },
-//   {
-//     id: 4,
-//     brand: "Relaxed Fit Linen-Blend Rugby Polo",
-//     imgUrl: "https://shoptommy.scene7.com/is/image/ShopTommy/MW34683_TQY_FNT?wid=352&hei=464&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
-//     price: 34100,
-//     category: "+1 Colors",
-//   },
-//   {
-//     id: 5,
-//     brand: "Flag logo Quarter-Zip Sweater",
-//     imgUrl:"https://shoptommy.scene7.com/is/image/ShopTommy/78J9329_BDS_FNT?wid=352&hei=464&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
-//     price: 18660,
-//     category: "+9 Colors",
-//   },
-//   {
-//     id: 6,
-//     brand: "Flag Logo Crewneck Sweater",
-//     imgUrl: "https://shoptommy.scene7.com/is/image/ShopTommy/78J8322_BDS_FNT?wid=352&hei=464&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp",
-//     price: 34100,
-//     category: "+12 Colors",
-//   },
-// ];
-//
-//
-// function createCard(product) {
-//   const { id, imgUrl, price, brand, category } = product;
-//
-//   const card = document.createElement("div");
-//   card.classList.add("card");
-//
-//   const img = document.createElement("img");
-//   img.src = imgUrl;
-//   img.alt = "";
-//
-//   const priceHeading = document.createElement("h3");
-//   priceHeading.textContent = getPrice(price) + " ₸";
-//
-//   const brandPara = document.createElement("p");
-//   brandPara.textContent = brand;
-//
-//   const descriptionPara = document.createElement("p");
-//   descriptionPara.textContent = category;
-//
-//   const button = document.createElement("button");
-//   // button.textContent = "Add to cart";
-//   // button.addEventListener("click",()=>addToCart(product)) //егер функцияда аргумент жок болса просто функциянын атын жазуга болады   button.addEventListener("click",addToCart)
-//   if (isAddedToCart(product)) {
-//       button.textContent = "Added to cart";
-//       button.disabled = true;
-//   } else {
-//       button.textContent = "Add to cart";
-//       button.addEventListener("click", () => {
-//         addToCart(product);
-//       });
-//   }
-//
-//
-//   card.appendChild(img);
-//   card.appendChild(priceHeading);
-//   card.appendChild(brandPara);
-//   card.appendChild(descriptionPara);
-//   card.appendChild(button);
-//
-//   return card;
-// }
-//
-//
-// function getPrice(price) {
-//   let priceStr = String(price);
-//   if (priceStr.length > 4) {
-//       const priceSlices = [];
-//       for (let i = priceStr.length - 3; i >= 0; i-=3) {
-//           priceSlices.unshift(priceStr.slice(i > 0 ? i : 0, i + 3));
-//           priceStr = priceStr.slice(0, i);
-//       }
-//       priceSlices.unshift(priceStr);
-//       priceStr = priceSlices.join(" ")
-//   }
-//   return priceStr;
-// }
-// console.log()
-//
-//
-// function addToCart(product) {
-//   const cart = localStorage.getItem("cart");
-//   const cartItems = JSON.parse(cart) || [];
-//   if (cartItems.find(item  => item.id == product.id)) {
-//     return;
-//   }
-//   cartItems.push({...product, quantity: 1,size: "M"}); //обьект курады
-//   localStorage.setItem("cart", JSON.stringify(cartItems)); //object-JSON
-//   window.location.reload() //страница автоматический обновляется
-// }
-//
-// function isAddedToCart(product) {
-//   const cart = JSON.parse(localStorage.getItem("cart")) || [];
-//   return cart.find((p) => p.id == product.id) != null;
-// }
-//
-//
-//
-// const cards = document.querySelector(".cards");
-// secClothes.forEach((product) => {
-//   cards.appendChild(createCard(product));
-// });
+const cards = document.querySelector(".cards");
+clothes.forEach((product) => {
+  cards.appendChild(createCard(product));
+});

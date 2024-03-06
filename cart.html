@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Men's sweaters</title>
-    <link rel="stylesheet" href="./second-page.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lobster&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-      <header>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+  <header>
 
      <div class="content-slider">
        <div class="slider">
@@ -382,182 +378,69 @@
                          </div>
            </div>
 
-           <div class="mens_store">
-               <div class="mens_polos">
-                   <h1>MEN'S SWEATERS</h1>
-               </div>
 
-               <div class = "clothes_page">
+    <main>
+        <div class="cart-left">
+            <div class="cart-items-top">
+                <h5><b>FREE SHIPPING</b> ON ORDERS $100+ <a href = "#" class = "">Details</a></h5>
+                <h2>SHOPPING BAG: <span id="cart-size"></span></h2>
 
-                <div class = "sports_suit">
-                  <div class="shop_all">
-                    <a href="https://usa.tommy.com/en/men/clothing/tops/polos?icid=men_polos_plp-filter2-men_polos_plp-20240215">
-                    <img class = "clothe-img" src = "" height = "200px" alt = ""> </a>
-                    <h4>Shop All</h4>
-                 </div>
-                 <div class="shop_all">
-                   <a href="https://media.tommy.com/us/static/images/scheduled_marketing/2024/01/PLP_FH_MTops_polos.jpg">
-                   <img class = "clothe-img" src = "" height = "200px" alt = ""> </a>
-                   <h4>Polos</h4>
-                </div>
-                <div class="shop_all">
-                  <a href="https://media.tommy.com/us/static/images/scheduled_marketing/2024/01/PLP_FH_MTops_tees.jpg">
-                  <img class = "clothe-img" src = "" height = "200px" alt = ""> </a>
-                  <h4>T-Shirts</h4>
-                </div>
-                <div class="shop_all">
-                  <a href="https://media.tommy.com/us/static/images/scheduled_marketing/2024/01/PLP_FH_MTops_hoodies.jpg">
-                  <img class = "clothe-img" src = "" height = "200px" alt = ""> </a>
-                  <h4>Hoodies & Sweatshirts</h4>
-                </div>
-                <div class="shop_all">
-                  <a href="https://media.tommy.com/us/static/images/scheduled_marketing/2024/01/PLP_FH_MTops_shirts.jpg">
-                  <img class = "clothe-img" src = "" height = "200px" alt = ""> </a>
-                  <h4>Shirts</h4>
-                </div>
-                <div class="shop_all">
-                  <a href="https://media.tommy.com/us/static/images/scheduled_marketing/2024/01/PLP_FH_MTops_sweaters.jpg">
-                  <img class = "clothe-img" src = "" height = "200px" alt = ""> </a>
-                  <h4>Sweaters</h4>
-                </div>
             </div>
-           </div>
-         </div>
-        <!-- <div class = "all-clothes">
-        <div class = "clothes_main"> -->
+            <div id="display-cart">
+                <h2>Products</h2>
+                <!-- <button><ion-icon name="chevron-up-outline"></ion-icon></button> -->
+            </div>
+            <div class="cart-items">
+                <!-- <div class="cart-item">
+                    <div class="cart-item-left">
+                        <img src="https://arbuz.kz/image/s3/arbuz-kz-products/19445-001-s.jpg?w=140&h=140&_c=1705328654"
+                        alt="">
+                        <div class="cart-item-left-actions">
+                            <a href="http://">Бананы кг</a>
+                            <div class="cart-item-amount">
+                                <button><ion-icon name="trash-outline"></ion-icon></button>
+                                <p>0,9 кг</p>
+                                <button><ion-icon name="add-outline"></ion-icon></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item-right">
+                        <button><ion-icon name="close-outline"></ion-icon></button>
+                        <p>1125 ₸</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="cart-right">
+            <div class="purchase-details">
+                <h2>ORDER SMART</h2>
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td id="products-price">8 575 ₸</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td id="delivery-price">0 ₸</td>
+                </tr>
+                <tr>
+                    <td><b>Tax</b></td>
+                    <td><b id="total-price">8 575 ₸</b></td>
+                </tr>
+            </table>
+             <h5>4 interest-free payments of $16.40 with Klarna.
+              <br> <a href = "#" class = "">Learn More</a></br></h5>
+              <h5>or 4 interest-free payments of $16.40 with  <b>afterpay</b></h5>
+            <button><ion-icon name="bag"></ion-icon>GO TO CHECKOUT</button>
 
-  </div>
- </div>
-</header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/2560px-PayPal.svg.png" alt="">
+            </div>
+        </div>
 
-<section class = "tommy-ctgr">
-<div class="cart-right">
-<div class="select" tabindex="1">
-  <input class="selectopt" name="test" type="radio" id="opt1" checked>
-  <label for="opt1" class="option">Size</label>
-  <input class="selectopt" name="test" type="radio" id="opt2">
-  <label for="opt2" class="option">XS (48)</label>
-  <input class="selectopt" name="test" type="radio" id="opt3">
-  <label for="opt3" class="option">S (44)</label>
-  <input class="selectopt" name="test" type="radio" id="opt4">
-  <label for="opt4" class="option">M (43)</label>
-  <input class="selectopt" name="test" type="radio" id="opt5">
-  <label for="opt5" class="option">L (42)</label>
-  <input class="selectopt" name="test" type="radio" id="opt3">
-  <label for="opt3" class="option">XL (38)</label>
-  <input class="selectopt" name="test" type="radio" id="opt4">
-  <label for="opt4" class="option">XXL (36)</label>
-  <input class="selectopt" name="test" type="radio" id="opt5">
-  <label for="opt5" class="option">XXXL (34)</label>
-</div>
-</div>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./cart.js"></script>
+</body>
 
-<div class="cart-left">
-   <div class="cards">
-     <!-- <div class="card">
-         <img src="https://shoptommy.scene7.com/is/image/ShopTommy/78J8322_FAP_BCK?wid=352&hei=464&qlt=80%2C0&resMode=sharp2&op_usm=0.9%2C1.0%2C8%2C0&iccEmbed=0&fmt=webp" alt="">
-         <p>Flag Logo Crewneck Sweater</p>
-         <h3>$79.50 $34.99 56% off</h3>
-         <p>+12 Colors</p>
-         <button>Add to cart</button>
-    </div> -->
- </div>
-</div>
-</section>
-
-<footer class = "app-footer">
-  <div class = "app-footer-container">
-
-  </div>
-
-
-  <div class = "app-footer-grid">
-    <div class = "footer-column">
-      <div class = "footer-column-title">
-        <h2>LET US HELP YOU</h2>
-      </div>
-       <a href = "" class = "footer-column-link">Customer Service</a>
-       <a href = "" class = "footer-column-link">Promotions</a>
-       <a href = "" class = "footer-column-link">E-Gift Cards</a>
-       <a href = "" class = "footer-column-link">Order Status</a>
-       <a href = "" class = "footer-column-link">Your Order</a>
-       <a href = "" class = "footer-column-link">Shipping</a>
-       <a href = "" class = "footer-column-link">Returns</a>
-       <a href = "" class = "footer-column-link">Size Guide</a>
-       <a href = "" class = "footer-column-link">Group divscounts</a>
-       <a href = "" class = "footer-column-link">Klarna</a>
-       <a href = "" class = "footer-column-link">Afterpay</a>
-       <a href = "" class = "footer-column-link">Store Directory</a>
-       <a href = "" class = "footer-column-link">FAQs</a>
-    </div>
-
-  <div class = "footer-column">
-    <div class = "footer-column-title">
-      <h2>GET TO KNOW US</h2>
-    </div>
-     <a href = "" class = "footer-column-link">Sustainability</a>
-     <a href = "" class = "footer-column-link">Careers</a>
-     <a href = "" class = "footer-column-link">Press</a>
-     <a href = "" class = "footer-column-link">Affiliate Program</a>
-  </div>
-
-  <div class = "footer-column">
-    <div class = "footer-column-title">
-      <h2>EXPLORE</h2>
-    </div>
-     <a href = "" class = "footer-column-link">The Hilfiger Club </a>
-     <a href = "" class = "footer-column-link">Tommy Stories</a>
-     <a href = "" class = "footer-column-link">People's Place Program</a>
-     <a href = "" class = "footer-column-link">@TOMMYHILFIGER</a>
-  </div>
-
-  <div class = "footer-column">
-    <div class = "footer-column-title">
-      <h2>STORE LOCATOR</h2>
-    </div>
-     <a href = "" class = "footer-column-link"><b>CONTACT US</b></a>
-     <a href = "" class = "footer-column-link">Newsletter Signup</a>
-     <a href = "" class = "footer-column-link">Chat</a>
-
-     <br>
-     <br>
-     <br>
-   <div class="logos">
-      <ion-icon name="logo-twitter"></ion-icon>
-      <ion-icon name="logo-facebook"></ion-icon>
-      <ion-icon name="logo-instagram"></ion-icon>
-      <ion-icon name="logo-pinterest"></ion-icon>
-      <ion-icon name="logo-youtube"></ion-icon>
-    </div>
-  </div>
-</div>
-
-<div class="tommy_footer">
-   <div class="footer-terms">
-      <img src="https://usa.tommy.com/on/demandware.static/-/Sites-PVHTHUS-Library/default/dwb45d9b29/Logo-TH-Wordmark.svg" alt="">
-   </div>
-    <div class="conditions">
-      <a href="#" class = "footer-column-link">Terms & Conditions |</a>
-      <a href="#" class = "footer-column-link">Privacy Policy |</a>
-      <a href="#" class = "footer-column-link">Privacy Commitment |</a>
-      <a href="#" class = "footer-column-link">Interest Based Ads |</a>
-      <a href="#" class = "footer-column-link">Do Not Sell or Share My Personal Information |</a>
-      <a href="#" class = "footer-column-link">California,UK & Australia Supply Chain Disclosure |</a>
-      <a href="#" class = "footer-column-link">Brand Protection |</a>
-      <a href="#" class = "footer-column-link">Accessibility |</a>
-    </div>
-   <div class="web_id">
-      <p>Wed ID: 523756229
-      <br> © 2024 Tommy Hilfiger licensing, LLC. All rights reserved.</p>
-   </div>
-  </div>
-</div>
-</footer>
-
-     <script src="./second-page.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
-
-     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
- </body>
- </html>
+</html>
